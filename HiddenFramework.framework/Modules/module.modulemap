@@ -1,0 +1,11 @@
+framework module HiddenFramework {
+  umbrella header "HiddenFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module HiddenFramework.Swift {
+    header "HiddenFramework-Swift.h"
+    requires objc
+}
